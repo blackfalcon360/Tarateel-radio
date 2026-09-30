@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Tarateel Radio</string>
+    <string name="app_name">أبو الخير الأثري</string>
     <string name="btn_play">Play</string>
     <string name="btn_pause">Pause</string>
     <string name="status_playing">Live — playing</string>
