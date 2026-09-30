@@ -23,7 +23,7 @@ class MainActivity : AppCompatActivity() {
     companion object {
         // Asli stream URL (telegradio page ke andar se nikala gaya)
         const val STREAM_URL = "https://qurango.net/radio/tarateel"
-        const val STATION_NAME = "أبــو الـخــيـــر ألأثـــري"
+        const val STATION_NAME = "أبــو الـخــيـــر الأثـــري"
     }
 
     private lateinit var statusText: TextView
