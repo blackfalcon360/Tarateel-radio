@@ -5,5 +5,5 @@
     <string name="status_playing">Playing</string>
     <string name="status_buffering">Connecting…</string>
     <string name="status_stopped">Stopped</string>
-    <string name="error_stream">Stream error — internet check karein</string>
+    <string name="error_stream">Stream error — Check your internet connection</string>
 </resources>
