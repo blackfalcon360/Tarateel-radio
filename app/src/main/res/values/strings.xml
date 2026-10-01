@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">أبو الخير الأثري</string>
     <string name="btn_play">Play</string>
-    <string name="btn_stop">Stop</string>
+    <string name="btn_pause">Stop</string>
     <string name="status_playing">Playing</string>
     <string name="status_buffering">Connecting…</string>
     <string name="status_stopped">Stopped</string>
