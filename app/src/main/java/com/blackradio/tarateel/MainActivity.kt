@@ -82,7 +82,7 @@ class MainActivity : AppCompatActivity() {
                     .setMediaMetadata(
                         MediaMetadata.Builder()
                             .setTitle(STATION_NAME)
-                            .setArtist("Saudi Arabia")
+                            .setArtist("00923449663420")
                             .build()
                     )
                     .build()
