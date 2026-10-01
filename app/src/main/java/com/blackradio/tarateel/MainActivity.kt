@@ -50,8 +50,12 @@ class MainActivity : AppCompatActivity() {
 
         playButton.setOnClickListener {
             val c = controller ?: return@setOnClickListener
-            if (c.isPlaying || c.playWhenReady) {
+            val active = c.isPlaying ||
+                (c.playWhenReady && c.playbackState != Player.STATE_IDLE)
+            if (active) {
+                // Stop: radio ke liye pause ke bajaye poori tarah rok dein
                 c.pause()
+                c.stop()
             } else {
                 if (c.playbackState == Player.STATE_IDLE || c.playbackState == Player.STATE_ENDED) {
                     c.prepare()
