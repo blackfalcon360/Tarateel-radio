@@ -51,7 +51,7 @@ class MainActivity : AppCompatActivity() {
         playButton.setOnClickListener {
             val c = controller ?: return@setOnClickListener
             if (c.isPlaying || c.playWhenReady) {
-                c.stop()
+                c.pause()
             } else {
                 if (c.playbackState == Player.STATE_IDLE || c.playbackState == Player.STATE_ENDED) {
                     c.prepare()
@@ -105,11 +105,11 @@ class MainActivity : AppCompatActivity() {
         when {
             c.isPlaying -> {
                 statusText.text = getString(R.string.status_playing)
-                playButton.text = getString(R.string.btn_stop)
+                playButton.text = getString(R.string.btn_pause)
             }
             c.playWhenReady && c.playbackState == Player.STATE_BUFFERING -> {
                 statusText.text = getString(R.string.status_buffering)
-                playButton.text = getString(R.string.btn_stop)
+                playButton.text = getString(R.string.btn_pause)
             }
             else -> {
                 statusText.text = getString(R.string.status_stopped)
